@@ -1,4 +1,11 @@
 <?php
+
+// Debug temporalmente
+error_log("=== DEBUG DATABASE CONNECTION ===");
+error_log("MYSQL_HOST: " . ($_ENV['MYSQL_HOST'] ?? $_SERVER['MYSQL_HOST'] ?? 'NOT SET'));
+error_log("MYSQL_PORT: " . ($_ENV['MYSQL_PORT'] ?? $_SERVER['MYSQL_PORT'] ?? 'NOT SET'));
+error_log("MYSQL_DATABASE: " . ($_ENV['MYSQL_DATABASE'] ?? $_SERVER['MYSQL_DATABASE'] ?? 'NOT SET'));
+error_log("MYSQL_USER: " . ($_ENV['MYSQL_USER'] ?? $_SERVER['MYSQL_USER'] ?? 'NOT SET'));
 /**
  * Database Configuration
  * Configuración para Railway y desarrollo local
