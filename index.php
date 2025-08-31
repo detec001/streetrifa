@@ -1,6 +1,7 @@
 <?php
 // Include database functions
 require_once './admin/process_admin_login.php';
+require_once './config/database.php';
 
 // Get next raffle for countdown
 $next_raffle = null;
